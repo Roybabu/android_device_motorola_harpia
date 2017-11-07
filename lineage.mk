@@ -15,6 +15,11 @@
 
 $(call inherit-product, device/motorola/harpia/full_harpia.mk)
 
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+$(call inherit-product, device/motorola/athene/full_athene.mk)
+
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1280
